@@ -1,4 +1,23 @@
-# Get-Counter -ListSet
+<#
+.SYNOPSIS
+	Resource monitor with PowerShell.
+
+.DESCRIPTION
+    Resource monitor with PowerShell.
+
+.PARAMETER Processes
+    Enter the number of process's to be displayed.
+
+.EXAMPLE
+    Start-PSTop
+
+.EXAMPLE
+    Start-PSTop -Processes 20
+
+.NOTES
+    Get-Counter -ListSet
+    Any improvements welcome.
+#>
 
 function Start-PSTop {
 
