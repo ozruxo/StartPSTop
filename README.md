@@ -1,2 +1,2 @@
 # StartPSTop
-Inspiration from various terminal monitoring tools. Made completely with PowerShell only.
+Inspiration from various terminal monitoring tools. Made completely with PowerShell.
