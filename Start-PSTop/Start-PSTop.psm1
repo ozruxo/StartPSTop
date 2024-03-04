@@ -171,6 +171,11 @@ function Start-PSTop {
             #$ProcessorSample = Get-Counter -ListSet Processor #| ? {$_.countersetname -match "^Processor$"}
             $ProcPercent = Get-Counter '\Processor(*)\% Processor Time'
             $ProcCount   = ($ProcPercent.CounterSamples.Count)-1
+	    
+	    # Since the longest part of the script is getting the PROC data. Placing this here.
+            if($Host.UI.RawUI.KeyAvailable -and ("q" -eq $Host.UI.RawUI.ReadKey("IncludeKeyup,NoEcho").Character)) {
+                break
+            }
 
             #create a variable for each processor
             for ($i=0;$i -lt $ProcCount;$i++){
